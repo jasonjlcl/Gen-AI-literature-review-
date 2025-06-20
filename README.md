@@ -9,6 +9,8 @@ We ingested 50,200 OpenAlex records on “AI in Manufacturing” and distilled t
 ---
 
 ## 🚀 Directory Structure
+
+```text
 .
 ├── data/
 │   ├── openalex_raw.csv
@@ -21,9 +23,6 @@ We ingested 50,200 OpenAlex records on “AI in Manufacturing” and distilled t
 ├── utils/
 ├── notebooks/
 └── README.md
-git add README.md
-git commit -m "Update directory tree formatting"
-git push
 
 
 ---
