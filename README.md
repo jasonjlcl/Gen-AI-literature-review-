@@ -9,17 +9,22 @@ We ingested 50,200 OpenAlex records on “AI in Manufacturing” and distilled t
 ---
 
 ## 🚀 Directory Structure
-├── data/ # raw and intermediate datasets
-│ ├── openalex_raw.csv
-│ └── abstracts_filtered.csv
-├── doi_resolver/ # async DOI resolution scripts + GUI
-│ ├── resolve_dois.py
-│ └── gui.py
-├── extractor/ # 23-field extraction pipeline
-│ └── extract_fields.py
-├── utils/ # helper functions (retry logic, error logging)
-├── notebooks/ # exploratory analyses & QA checks
-└── README.md # this file
+.
+├── data/
+│   ├── openalex_raw.csv
+│   └── abstracts_filtered.csv
+├── doi_resolver/
+│   ├── resolve_dois.py
+│   └── gui.py
+├── extractor/
+│   └── extract_fields.py
+├── utils/
+├── notebooks/
+└── README.md
+git add README.md
+git commit -m "Update directory tree formatting"
+git push
+
 
 ---
 
