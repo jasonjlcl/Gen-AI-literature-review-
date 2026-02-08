@@ -1,0 +1,48 @@
+You are an expert research analyst.
+
+Task:
+Extract structured information from the following research abstract and return strict JSON only.
+
+Input record:
+- Title: {title}
+- Publication year: {publication_year}
+- Publication type: {publication_type}
+- Abstract: {abstract}
+
+Rules:
+1. Return valid JSON only. No markdown, no extra text.
+2. Use the exact field names below.
+3. Use null for unknown scalar values.
+4. Use empty arrays for unknown list values.
+5. Restrict enum fields:
+   - ai_category: ["GenAI", "Traditional AI", "Hybrid", "Unknown"]
+   - technical_complexity: ["Low", "Medium", "High", "Unknown"]
+   - roi_impact: ["Low", "Medium", "High", "Unknown"]
+   - time_horizon: ["Short", "Medium", "Long", "Unknown"]
+
+JSON schema fields:
+{
+  "use_cases": [string],
+  "opportunities": [string],
+  "challenges": [string],
+  "ai_category": string,
+  "business_function": string,
+  "technical_complexity": string,
+  "roi_impact": string,
+  "time_horizon": string,
+  "industry_segment": string,
+  "implementation_stage": string,
+  "data_requirements": [string],
+  "model_family": string,
+  "deployment_pattern": string,
+  "human_in_the_loop": string,
+  "risk_factors": [string],
+  "compliance_considerations": [string],
+  "kpis": [string],
+  "stakeholders": [string],
+  "cost_profile": string,
+  "scalability": string,
+  "integration_complexity": string,
+  "confidence_score": number,
+  "concise_summary": string
+}
